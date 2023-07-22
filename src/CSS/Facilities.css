@@ -1,0 +1,13 @@
+.facilityContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+}
+.facilities{    
+    display: flex;
+}
+.facilities span{
+    background-color: bisque;
+    /* padding: 3rem; */
+}

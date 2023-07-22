@@ -1,0 +1,18 @@
+.about{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    /* justify-content: center; */
+    align-items: center;
+}
+.aboutHead{
+    /* width: 100%; */
+    margin: 3rem;
+    font-size: 2rem;
+}
+.aboutHead span{
+    color: red;
+}
+.aboutContent{
+    font-size: 1.5rem;
+}

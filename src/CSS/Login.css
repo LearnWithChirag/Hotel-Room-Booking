@@ -1,0 +1,52 @@
+.loginWindow{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    padding: 1.5rem;
+    margin-top: 10rem;
+    margin-left: 25rem;
+    margin-bottom: 5rem;
+    border: .1rem solid black;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 1);
+    border-radius: .5rem;
+    background-color: white;
+}
+.loginHead{
+    display: flex;
+    padding: 1rem;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+.loginHead img{
+    width: 2rem;
+}
+
+.loginDetails form{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    /* gap: .5rem; */
+}
+.loginDetails label, input{
+    padding: .5rem;
+}
+.btnLink{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem;
+}
+.btnLink button{
+    padding: .5rem 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+}
+.btnLink button:hover{
+    box-shadow: 0 0 .5rem rgba(0, 0, 0, 1);
+}
+
+.btnLink a{
+    /* color: black; */
+    font-weight: 700;
+}

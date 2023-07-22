@@ -1,0 +1,95 @@
+.deluxRoom{
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    flex-direction: column;
+    padding: 2rem;
+}
+.roomHead{
+    padding: 1rem;
+    border-bottom: .2rem solid black;
+    border-top: .2rem solid black;
+}
+.roomImg{
+    margin-top: 2rem;
+}
+.roomImg img{
+    box-shadow: 0 0 2rem black;
+    width: 50rem;
+}
+.roomDetail{
+    display: flex;
+    width: 100%;
+    margin-top: 5rem;
+    justify-content: space-evenly;
+}
+
+.roomDescription{
+    width: 70%;
+    margin-top: 4rem;
+}
+.roomDescription p{
+    margin: 2rem 0;
+    font-size: 1.5rem;
+}
+.roomDescription h2{
+    font-size: 2rem;
+}
+.roomDescription span{
+    padding: 2rem;
+    font-size: 1.4rem;
+}
+.roomList{
+    display: flex;
+    width: 70%;
+    margin-top: 4rem;
+    justify-content: space-evenly;
+}
+.roomServices{
+    font-size: 1.4rem;
+}
+.roomServices li{
+    margin-top: 1rem;
+}
+.roomAddOn{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    /* align-items: center; */
+    /* justify-content: center; */
+    font-size: 1.4rem;
+}
+.roomAddOn div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.roomAddOn input{
+    width: 1.5rem;
+    height: 1.5rem;
+}
+.roomAddOn span label{
+    padding: 1rem;
+    
+}
+.roomAddOn span{
+    display: flex;
+    align-items: center;
+}
+.totalPrice{
+    margin-top: 5rem;
+    display: flex;
+    font-size: 2rem;
+    align-items: center;
+}
+.totalPrice span{
+    padding: 2rem;
+}
+.totalPrice button{
+    font-size: 1.5rem;
+    padding: 1rem;
+    cursor: pointer;
+}
+.totalPrice button:hover{
+    box-shadow: 0 0 .5rem black;
+}
