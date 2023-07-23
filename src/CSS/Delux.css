@@ -92,4 +92,12 @@
 }
 .totalPrice button:hover{
     box-shadow: 0 0 .5rem black;
+    
+}
+
+.booked{
+    color: green;
+    /* visibility: hidden; */
+    transition: all 2s .4s;
+    opacity: 0;
 }

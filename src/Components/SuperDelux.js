@@ -4,6 +4,10 @@ import "../CSS/Delux.css";
 import Navbar from "./Navbar";
 
 const SuperDelux = () => {
+  function Booked(){
+    document.querySelector('.booked').style.opacity='1';
+    document.querySelector('.bookBtn').textContent='Booked';
+  }
   return (
     <>
       <Navbar />
@@ -79,8 +83,9 @@ const SuperDelux = () => {
           </div>
         </div>
         <div className="totalPrice">
+        <span><p className="booked">Your Room has been Booked🎊</p></span>
             <span>&#8377;3999</span>
-            <span><button>Book Now</button></span>
+            <span><button onClick={Booked} className="bookBtn">Book Now</button></span>
         </div>
       </div>
     </>

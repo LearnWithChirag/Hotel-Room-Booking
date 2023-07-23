@@ -8,12 +8,12 @@ import Navbar from "./Navbar";
 const OurRooms = () => {
     // function roomAvailable () {
         
-    //         if(props.available === true){
-    //             document.querySelector('.avail').textContent="Available";
-    //         }else{
-    //             document.querySelector('.avail').textContent="Reserved";
+            // if(props.available === true){
+            //     document.querySelector('.avail').textContent="Available";
+            // }else{
+            //     document.querySelector('.avail').textContent="Reserved";
 
-    //         }
+            // }
     // };
 
   return (
@@ -32,6 +32,7 @@ const OurRooms = () => {
           guests="2 Adult , 2 Children"
           price={1999}
           available={true}
+          soldOut= {false}
           link= "/delux"
         />
 
@@ -43,6 +44,7 @@ const OurRooms = () => {
           guests="4 Adult , 2 Children"
           price={3999}
           available={true}
+          soldOut= {false}
           link="/superdelux"
         />
 
@@ -54,6 +56,7 @@ const OurRooms = () => {
           guests="100 Person"
           price={6999}
           available={false}
+          soldOut = {true}
           link="/hall"
         />
       </div>
@@ -62,6 +65,7 @@ const OurRooms = () => {
 };
 
 function Room(props) {
+
   return (
     <div className="roomContainer">
       <div className="room">
@@ -83,11 +87,26 @@ function Room(props) {
         </div>
       </div>
       <div className="roomPrice">
-        <h3 className="avail">{props.available}</h3>
+        {
+          props.available ? (
+            <h3 className="avail" style={{backgroundColor:"green"}}>Available</h3>
+            
+          ):(
+            <h3 className="avail" style={{backgroundColor:"red"}}>Reserved</h3>
+          )
+            
+          
+        }
         <h2> &#8377;{props.price}</h2>
         <a href={props.link}>
+        {
+          props.soldOut ? (
+            <input value="Sold" type="button" disabled/>
+          ):(
 
-        <input type="button" value="Book" className="boonBtn" />
+            <input type="button" value="Book" />
+          )
+        }
         </a>
       </div>
     </div>
